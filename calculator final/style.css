@@ -1,0 +1,98 @@
+html {
+  font-family: "Lora", serif;
+  color: blueviolet;
+}
+
+h1 {
+  text-align: center;
+}
+
+#table {
+  background: violet;
+  border: 2px solid blueviolet;
+  border-radius: 10px;
+  margin: auto;
+  width: 800px;
+}
+
+table {
+  margin: auto;
+  padding: 20px;
+}
+
+tr {
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+td {
+  border: 1px solid blueviolet;
+  font-size: 20px;
+  text-align: center;
+}
+
+button {
+  background: violet;
+  border-style: none;
+  padding: 5px;
+  text-align: center;
+  color: blueviolet;
+}
+
+#big1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+#calcbox {
+  width: 800px;
+  margin: auto;
+  background-color: violet;
+  border: 2px solid blueviolet;
+  padding: 100px 0px;
+  border-radius: 10px;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+}
+
+#cubecalcbtn {
+  border: 1px solid blueviolet;
+  margin: 0px 367px;
+}
+
+#sphcalcbtn {
+  border: 1px solid blueviolet;
+  margin: 0px 367px;
+}
+
+#cylcalcbtn {
+  border: 1px solid blueviolet;
+  margin: 0px 367px;
+}
+
+#conecalcbtn {
+  border: 1px solid blueviolet;
+  margin: 0px 367px;
+}
+
+#pyrcalcbtn {
+  border: 1px solid blueviolet;
+  margin: 0px 367px;
+}
+
+#rectcalcbtn {
+  border: 1px solid blueviolet;
+  margin: 0px 367px;
+}
+
+.calculation {
+  display: none;
+}

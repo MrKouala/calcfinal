@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surface Area and Volume Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="table">
+      <table>
+        <tr>
+          <td colspan="6" id="big1">Surface Area and Volume Calculators</td>
+        </tr>
+        <tr>
+          <td><button id="cubebtn">Cube</button></td>
+          <td><button id="sphbtn">Sphere</button></td>
+          <td><button id="cylbtn">Right Cylinder</button></td>
+          <td><button id="conebtn">Right Cone</button></td>
+          <td><button id="pyrbtn">Right Pyramid</button></td>
+          <td><button id="rectbtn">Rectangular Prism</button></td>
+        </tr>
+      </table>
+    </div>
+    <h1>Calculator will appear here</h1>
+    <div id="calcbox">
+      <!-- cube -->
+      <div class="calculation" id="cube">
+        <h2>
+          <i>
+            SA = 6s<sup>2</sup>
+            <br />
+            V = s<sup>3</sup></i
+          >
+        </h2>
+        <p><i>s is the side length of the cube.</i></p>
+
+        <p>s = <input type="text" id="cubecalc" /></p>
+        <p>unit = <input type="text" id="cubeunit" /></p>
+        <p>SA = <span id="cubeSA">----</span></p>
+        <p>V = <span id="cubeV">----</span></p>
+        <button id="cubecalcbtn">Calculate</button>
+      </div>
+
+      <!-- sphere -->
+      <div class="calculation" id="sphere">
+        <h2>
+          <i>
+            SA = 4πr<sup>2</sup>
+            <br />
+            V = (4/3)πr<sup>3</sup>
+          </i>
+        </h2>
+        <p><i>r is the radius of the sphere.</i></p>
+
+        <p>r = <input type="text" id="sphcalc" /></p>
+        <p>unit = <input type="text" id="sphunit" /></p>
+        <p>SA = <span id="sphSA">----</span></p>
+        <p>V = <span id="sphV">----</span></p>
+        <button id="sphcalcbtn">Calculate</button>
+      </div>
+
+      <!-- cylinder -->
+      <div class="calculation" id="cylinder">
+        <h2>
+          <i>
+            SA = 2πr<sup>2</sup> + 2πrh
+            <br />
+            V = πr<sup>2</sup>h
+          </i>
+        </h2>
+
+        <p>
+          <i>
+            r is the radius of the cylinder's base.
+            <br />
+            h is the height of the cylinder.
+          </i>
+        </p>
+        <p>r = <input type="text" id="cylcalc" /></p>
+        <p>h = <input type="text" id="cylcalc2" /></p>
+        <p>unit = <input type="text" id="cylunit" /></p>
+        <p>SA = <span id="cylSA">----</span></p>
+        <p>V = <span id="cylV">----</span></p>
+        <button id="cylcalcbtn">Calculate</button>
+      </div>
+
+      <!-- cone -->
+      <div class="calculation" id="cone">
+        <h2>
+          <i>
+            SA = πrs + πr<sup>2</sup>
+            <br />
+            V = (1/3)πr<sup>2</sup>h
+          </i>
+        </h2>
+        <p>
+          <i>
+            r is the radius of the cone's base.
+            <br />
+            s is the side length of the cone from base to tip.
+            <br />
+            h is the height of the cone.
+          </i>
+        </p>
+
+        <p>r = <input type="text" id="conecalc" /></p>
+        <p>s = <input type="text" id="conecalc2" /></p>
+        <p>h = <input type="text" id="conecalc3" /></p>
+        <p>unit = <input type="text" id="coneunit" /></p>
+        <p>SA = <span id="coneSA">----</span></p>
+        <p>V = <span id="coneV">----</span></p>
+        <button id="conecalcbtn">Calculate</button>
+      </div>
+
+      <!-- pyramid -->
+      <div class="calculation" id="pyramid">
+        <h2>
+          <i>
+            SA = l<sup>2</sup> + 2sl
+            <br />
+            V = (lwh)/3
+          </i>
+        </h2>
+        <p>
+          <i>
+            l is the length from one side of the pyramid's base to the other.
+            <br />
+            w is the width from one side of the pyrami's base to the other,
+            parallel to the length.
+            <br />
+            h is the height of the pyramid.
+            <br />
+            s is the side length from the middle point of the width or height to
+            the tip of the pyramid.
+          </i>
+        </p>
+
+        <p>l = <input type="text" id="pyrcalc" /></p>
+        <p>w = <input type="text" id="pyrcalc2" /></p>
+        <p>h = <input type="text" id="pyrcalc3" /></p>
+        <p>s = <input type="text" id="pyrcalc4" /></p>
+        <p>unit = <input type="text" id="pyrunit" /></p>
+        <p>SA = <span id="pyrSA">----</span></p>
+        <p>V = <span id="pyrV">----</span></p>
+        <button id="pyrcalcbtn">Calculate</button>
+      </div>
+
+      <!-- rectangular prism -->
+      <div class="calculation" id="rectangularprism">
+        <h2>
+          <i>
+            SA = lw + wh + lh
+            <br />
+            V = lwh
+          </i>
+        </h2>
+        <p>
+          <i>
+            l is the length from one side of the prism's base to the other.
+            <br />
+            w is the width from one side of the prism's base to the other,
+            parallel to the length.
+            <br />
+            h is the height of the rectangular prism.
+          </i>
+        </p>
+
+        <p>l = <input type="text" id="rectcalc" /></p>
+        <p>w = <input type="text" id="rectcalc2" /></p>
+        <p>h = <input type="text" id="rectcalc3" /></p>
+        <p>unit = <input type="text" id="rectunit" /></p>
+        <p>SA = <span id="rectSA">----</span></p>
+        <p>V = <span id="rectV">----</span></p>
+        <button id="rectcalcbtn">Calculate</button>
+      </div>
+    </div>
+  </body>
+</html>
